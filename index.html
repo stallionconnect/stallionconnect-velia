@@ -70,14 +70,21 @@ html.lenis,html.lenis body{height:auto}
 }
 
 /* ---------- nav ---------- */
-.nav{position:fixed;inset:0 0 auto 0;z-index:50;padding:16px 0;transition:background .5s var(--ease),padding .5s var(--ease),box-shadow .5s var(--ease)}
-.nav.scrolled{background:rgba(246,240,231,.72);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%);padding:10px 0;box-shadow:0 1px 0 var(--line)}
-.nav .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;padding:16px 0;transition:padding .6s var(--ease)}
+.nav .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;border:1px solid transparent;border-radius:999px;transition:max-width .6s var(--ease),padding .6s var(--ease),background .6s var(--ease),box-shadow .6s var(--ease),border-color .6s var(--ease)}
+/* once scrolled, the bar floats as a frosted pill */
+.nav.scrolled{padding:10px 12px}
+.nav.scrolled .wrap{max-width:1180px;padding:7px 7px 7px 12px;background:rgba(246,240,231,.78);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%);border-color:rgba(255,255,255,.7);box-shadow:0 18px 40px -24px rgba(59,33,22,.4)}
+.nav.scrolled .pill{padding:8px 18px}
+.nav.scrolled .logo .sc-mark{width:36px;height:36px}
+.pill.active{background:var(--brown);color:#f6ede2}
+.pill.active:hover{background:var(--brown)}
+.mmenu a.active{color:#d4612f}
 .nav-l{display:flex;gap:10px}
 .pill{background:var(--pill);border-radius:999px;padding:10px 24px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;transition:background .3s var(--ease),transform .3s var(--ease)}
 .pill:hover{background:#e3d6c6;transform:translateY(-1px)}
 .logo{display:flex;align-items:center;gap:10px}
-.logo .sc-mark{width:44px;height:44px;transition:transform .8s var(--ease)}
+.logo .sc-mark{width:44px;height:44px;transition:transform .8s var(--ease),width .6s var(--ease),height .6s var(--ease)}
 .logo:hover .sc-mark{transform:rotate(-8deg) scale(1.06)}
 .logo b{font-weight:500;font-size:14px;letter-spacing:.08em;text-transform:uppercase;line-height:1.05}
 .logo b small{display:block;font-size:9px;font-weight:400;letter-spacing:.24em;color:var(--ink-2)}
@@ -1118,8 +1125,19 @@ const VIDEOS = {
   const nav = document.getElementById('nav');
   const hand = document.getElementById('hand-img');
   const stage = document.getElementById('stage');
+  // highlight the nav link for the section whose top has passed 40% of the screen
+  const navSections = ['home', 'about', 'services', 'industries', 'careers', 'contact'].map(id => document.getElementById(id)).filter(Boolean);
+  const navLinks = [...document.querySelectorAll('.nav-l a, .mmenu a')];
+  let activeId = '';
   const onScroll = () => {
     nav.classList.toggle('scrolled', scrollY > 20);
+    let current = navSections[0];
+    navSections.forEach(s => { if (s.getBoundingClientRect().top <= innerHeight * 0.4) current = s; });
+    if (innerHeight + scrollY >= document.documentElement.scrollHeight - 2) current = navSections[navSections.length - 1];
+    if (current && current.id !== activeId) {
+      activeId = current.id;
+      navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + activeId && a.textContent !== 'Get a Quote'));
+    }
     if (!reduce && hand && stage) {
       const r = stage.getBoundingClientRect();
       const p = Math.min(1, Math.max(0, (innerHeight - r.top) / (innerHeight + r.height)));
