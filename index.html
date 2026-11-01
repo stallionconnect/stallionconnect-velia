@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap">
 <style>
 :root{
-  --bg:#f6f0e7; --ink:#01337a; --ink-2:#5b4a3f; --pill:#ece3d7; /* ink is the brand navy: headings, strong text and dark buttons */
+  --bg:#f6f0e7; --ink:#2a1a12; --ink-2:#5b4a3f; --brown:#3b2116; --pill:#ece3d7;
   --line:rgba(42,26,18,.08); --glass:rgba(250,245,238,.55); --glass-b:rgba(255,255,255,.55);
   --r-xl:34px; --ease:cubic-bezier(.22,1,.36,1); --ease-io:cubic-bezier(.65,0,.35,1);
 }
@@ -45,12 +45,12 @@ ul,ol{list-style:none}
 .js .split.in .w>span{transform:none;opacity:1}
 
 /* hero headline gradient goes on EACH WORD, never on a wrapper */
-.h-display{font-weight:400;font-size:clamp(48px,7.6vw,112px);line-height:.96;letter-spacing:-.045em;color:var(--ink)}
-.h-display .w>span{background:linear-gradient(180deg,var(--ink) 0%,#004290 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.h-display{font-weight:400;font-size:clamp(48px,7.6vw,112px);line-height:.96;letter-spacing:-.045em;color:#3a2419}
+.h-display .w>span{background:linear-gradient(180deg,#3a2419 0%,#6d5547 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
 
-.h2{font-weight:400;font-size:clamp(34px,4.4vw,62px);line-height:1.02;letter-spacing:-.04em;margin-top:18px;color:var(--ink)}
+.h2{font-weight:400;font-size:clamp(34px,4.4vw,62px);line-height:1.02;letter-spacing:-.04em;margin-top:18px;color:#2a1a12}
 .h2 .lt{color:#8d7b6f;font-weight:300}
-.cta h2{font-weight:400;font-size:clamp(56px,8.4vw,128px);line-height:.9;letter-spacing:-.055em;color:var(--ink)}
+.cta h2{font-weight:400;font-size:clamp(56px,8.4vw,128px);line-height:.9;letter-spacing:-.055em;color:#2a1a12}
 
 /* in-page links stop below the fixed nav */
 html{scroll-padding-top:70px}
@@ -74,11 +74,11 @@ html{scroll-padding-top:70px}
 .nav .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;border:1px solid transparent;border-radius:999px;transition:max-width .6s var(--ease),padding .6s var(--ease),background .6s var(--ease),box-shadow .6s var(--ease),border-color .6s var(--ease)}
 /* once scrolled, the bar floats as a frosted pill */
 .nav.scrolled{padding:10px 12px}
-.nav.scrolled .wrap{max-width:1180px;padding:7px 7px 7px 12px;background:rgba(246,240,231,.78);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%);border-color:rgba(255,255,255,.7);box-shadow:0 18px 40px -24px rgba(1,51,122,.4)}
+.nav.scrolled .wrap{max-width:1180px;padding:7px 7px 7px 12px;background:rgba(246,240,231,.78);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%);border-color:rgba(255,255,255,.7);box-shadow:0 18px 40px -24px rgba(59,33,22,.4)}
 .nav.scrolled .pill{padding:8px 18px}
 .nav.scrolled .logo .sc-logo{width:122px;height:38px}
-.pill.active{background:var(--ink);color:#f6ede2}
-.pill.active:hover{background:var(--ink)}
+.pill.active{background:var(--brown);color:#f6ede2}
+.pill.active:hover{background:var(--brown)}
 .mmenu a.active{color:#d4612f}
 .nav-l{display:flex;gap:10px}
 .pill{background:var(--pill);border-radius:999px;padding:10px 24px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;transition:background .3s var(--ease),transform .3s var(--ease)}
@@ -91,9 +91,9 @@ html{scroll-padding-top:70px}
 .nav-r{display:flex;justify-content:flex-end;align-items:center;gap:22px}
 .tel{font-size:13px;display:flex;align-items:center;gap:8px}
 .tel svg{width:14px;height:14px}
-.btn-dark{background:var(--ink);color:#f6ede2;border-radius:999px;padding:11px 26px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;border:0;cursor:pointer;position:relative;overflow:hidden;isolation:isolate;display:inline-block;white-space:nowrap;transition:transform .4s var(--ease),box-shadow .4s var(--ease),opacity .3s}
+.btn-dark{background:var(--brown);color:#f6ede2;border-radius:999px;padding:11px 26px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;border:0;cursor:pointer;position:relative;overflow:hidden;isolation:isolate;display:inline-block;white-space:nowrap;transition:transform .4s var(--ease),box-shadow .4s var(--ease),opacity .3s}
 .btn-dark::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.22) 50%,transparent 70%);transform:translateX(-120%);z-index:-1;transition:transform .9s var(--ease)}
-.btn-dark:hover{transform:translateY(-2px);box-shadow:0 12px 28px -12px rgba(1,51,122,.6)}
+.btn-dark:hover{transform:translateY(-2px);box-shadow:0 12px 28px -12px rgba(59,33,22,.6)}
 .btn-dark:hover::before{transform:translateX(120%)}
 .btn-dark:disabled{opacity:.6;cursor:default;transform:none}
 .burger{width:42px;height:42px;border-radius:50%;background:var(--pill);border:0;display:none;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer}
@@ -117,7 +117,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .hero-points{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:20px}
 .hero-points li{font-size:12px;text-transform:uppercase;letter-spacing:.06em;background:var(--pill);border-radius:999px;padding:7px 14px;display:flex;align-items:center;gap:6px}
 .hero-points li::before{content:"";width:6px;height:6px;border-radius:50%;background:#d4612f}
-.hero-card{position:relative;margin-top:34px;border-radius:34px;overflow:hidden;height:clamp(680px,45.5vw,860px);background:#e8dccb;box-shadow:0 40px 80px -50px rgba(1,51,122,.45)}
+.hero-card{position:relative;margin-top:34px;border-radius:34px;overflow:hidden;height:clamp(680px,45.5vw,860px);background:#e8dccb;box-shadow:0 40px 80px -50px rgba(59,33,22,.45)}
 .shade{position:absolute;inset:0;background:radial-gradient(60% 70% at 50% 55%,rgba(246,240,231,.18),transparent 70%)}
 .studio{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(920px,74%);display:grid;grid-template-columns:1.7fr 1fr;border-radius:26px;background:rgba(240,232,222,.42);-webkit-backdrop-filter:blur(26px) saturate(130%);backdrop-filter:blur(26px) saturate(130%);border:1px solid rgba(255,255,255,.55);box-shadow:0 30px 60px -30px rgba(40,20,10,.35),inset 0 1px 0 rgba(255,255,255,.6);overflow:hidden}
 .chat{padding:22px 24px;display:flex;flex-direction:column;gap:12px;min-width:0}
@@ -187,7 +187,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .avatars .faces{display:flex}
 .avatars .faces img{width:30px;height:30px;border-radius:50%;border:2px solid #fff;object-fit:cover}
 .avatars .faces img+img{margin-left:-8px}
-.btn-white{display:block;text-align:center;background:#fff;color:var(--ink);border-radius:999px;padding:12px;font-size:13px;margin-top:14px;transition:transform .4s var(--ease)}
+.btn-white{display:block;text-align:center;background:#fff;color:#2a1a12;border-radius:999px;padding:12px;font-size:13px;margin-top:14px;transition:transform .4s var(--ease)}
 .btn-white:hover{transform:translateY(-2px)}
 .collage{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:6px;min-height:140px;border-radius:16px;overflow:hidden}
 .collage img{width:100%;height:100%;object-fit:cover;border-radius:12px;transition:transform 1.2s var(--ease)}
@@ -202,7 +202,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .row .ico svg{width:16px;height:16px}
 .row b{display:block;font-size:12px;font-weight:500}
 .row em{font-style:normal;font-size:10.5px;color:#8a7a6e;display:block;line-height:1.35}
-.ok{width:18px;height:18px;border-radius:50%;background:var(--ink);margin-left:auto;display:grid;place-items:center;flex:none}
+.ok{width:18px;height:18px;border-radius:50%;background:#2a1a12;margin-left:auto;display:grid;place-items:center;flex:none}
 .ok svg{width:9px;height:9px}
 .insight{position:relative;flex:1;border-radius:16px;overflow:hidden;min-height:150px}
 .insight img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;transition:transform 1.2s var(--ease)}
@@ -243,7 +243,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .g-foot svg{width:12px;height:12px}
 .build h5{margin-top:4px}
 .build ul{margin-top:12px;display:flex;flex-direction:column;gap:9px}
-.build li{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--ink)}
+.build li{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:#2a1a12}
 .build li span:first-child{display:flex;align-items:center;gap:8px;color:#5b4a3f}
 .build li svg{width:13px;height:13px}
 .bar{margin-top:14px;display:flex;align-items:center;gap:10px;font-size:11px;color:#8a7a6e}
@@ -278,7 +278,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .svc .meta+.meta{border-top:0;padding-top:0;margin-top:10px}
 .svc .view{margin-top:auto}
 .svc .meta:last-of-type{margin-bottom:16px}
-.svc.cta-card{background:var(--ink);color:#f6ede2;border-color:transparent;justify-content:space-between}
+.svc.cta-card{background:var(--brown);color:#f6ede2;border-color:transparent;justify-content:space-between}
 .svc.cta-card h5{font-size:28px;margin-top:0}
 .svc.cta-card>p{color:rgba(246,237,226,.75)}
 .svc.cta-card .view{border-color:rgba(246,237,226,.2)}
@@ -294,7 +294,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;padding-top:16px}
 .tags li{font-size:10.5px;background:rgba(255,255,255,.7);border-radius:999px;padding:4px 10px;color:#5b4a3f}
 .approach{margin-top:14px;display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr;gap:14px}
-.approach .lead-card{padding:24px;background:rgba(1,51,122,.88);color:#f6ede2;border-color:transparent}
+.approach .lead-card{padding:24px;background:rgba(59,33,22,.88);color:#f6ede2;border-color:transparent}
 .approach .lead-card h4{font-size:22px;letter-spacing:-.02em;line-height:1.15}
 .approach .lead-card p{color:rgba(246,237,226,.75)}
 
@@ -327,7 +327,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .field label .opt{text-transform:none;letter-spacing:0;color:#8a7a6e}
 .field input,.field select,.field textarea{width:100%;border:1px solid rgba(42,26,18,.1);background:rgba(255,255,255,.75);border-radius:14px;padding:11px 14px;font-size:13.5px;color:var(--ink);outline:none;transition:border-color .3s,box-shadow .3s;resize:vertical}
 .field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6' fill='none' stroke='%235b4a3f' stroke-width='1.4'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:10px;padding-right:34px}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(1,51,122,.35);box-shadow:0 0 0 4px rgba(1,51,122,.08)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(59,33,22,.35);box-shadow:0 0 0 4px rgba(59,33,22,.08)}
 .field input:user-invalid,.field select:user-invalid,.field textarea:user-invalid{border-color:#d4612f}
 .f-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:18px}
 .f-note{font-size:11.5px;color:#8a7a6e}
@@ -363,7 +363,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .foot ul{display:flex;flex-direction:column;gap:10px}
 .foot ul a,.foot ul span{font-size:13px;color:#6a594d;position:relative;transition:color .5s var(--ease)}
 .foot ul a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
-.foot ul a:hover{color:var(--ink)}
+.foot ul a:hover{color:#2a1a12}
 .foot ul a:hover::after{transform:scaleX(1);transform-origin:left}
 .mark .sc-mark{width:56px;height:56px}
 .legal{display:flex;justify-content:space-between;gap:16px;margin-top:64px;padding-top:22px;border-top:1px solid var(--line);font-size:12px;color:#8a7a6e}
@@ -616,10 +616,10 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
           </ul>
           <span class="lbl" style="display:block;margin-top:22px">What sets us apart</span>
           <ul class="checks two" style="margin-top:14px">
-            <li><span><b style="font-weight:500;color:var(--ink)">Industry-trained teams.</b> Agents learn your products, compliance rules and customer expectations before they go live.</span></li>
-            <li><span><b style="font-weight:500;color:var(--ink)">Quality you can measure.</b> Call audits, KPIs and regular reports show exactly how your process is performing.</span></li>
-            <li><span><b style="font-weight:500;color:var(--ink)">Built to scale.</b> Start with a pilot and grow the team as your volumes increase, without the hiring headache.</span></li>
-            <li><span><b style="font-weight:500;color:var(--ink)">Data security first.</b> Access controls and confidentiality agreements protect your customers' information.</span></li>
+            <li><span><b style="font-weight:500;color:#2a1a12">Industry-trained teams.</b> Agents learn your products, compliance rules and customer expectations before they go live.</span></li>
+            <li><span><b style="font-weight:500;color:#2a1a12">Quality you can measure.</b> Call audits, KPIs and regular reports show exactly how your process is performing.</span></li>
+            <li><span><b style="font-weight:500;color:#2a1a12">Built to scale.</b> Start with a pilot and grow the team as your volumes increase, without the hiring headache.</span></li>
+            <li><span><b style="font-weight:500;color:#2a1a12">Data security first.</b> Access controls and confidentiality agreements protect your customers' information.</span></li>
           </ul>
         </article>
       </div>
@@ -654,7 +654,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
               <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=300&q=70" alt="" loading="lazy">
               <img src="https://images.unsplash.com/photo-1758876018582-e7573baf5306?auto=format&fit=crop&w=300&q=70" alt="" loading="lazy">
             </div>
-            <div class="g-foot"><span>Front office to back office</span><span><svg viewBox="0 0 12 12" fill="none" stroke="#01337a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6h7M6.5 3l3 3-3 3"/></svg></span></div>
+            <div class="g-foot"><span>Front office to back office</span><span><svg viewBox="0 0 12 12" fill="none" stroke="#3b2116" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6h7M6.5 3l3 3-3 3"/></svg></span></div>
           </div>
           <div class="g-card build rv" style="--d:2">
             <div class="lbl">How we work</div>
@@ -851,10 +851,10 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
         <p>Apply online and our HR team will contact shortlisted candidates.</p>
         <span class="lbl" style="display:block;margin-top:24px">Hiring process</span>
         <ul class="checks" style="margin-top:12px">
-          <li><span><b style="font-weight:500;color:var(--ink)">Apply.</b> Apply online or share your resume with our HR team.</span></li>
-          <li><span><b style="font-weight:500;color:var(--ink)">Screening call.</b> A short call to understand your background and preferred role.</span></li>
-          <li><span><b style="font-weight:500;color:var(--ink)">Interview &amp; assessment.</b> A conversation and a simple test of communication and role skills.</span></li>
-          <li><span><b style="font-weight:500;color:var(--ink)">Offer &amp; training.</b> Receive your offer and start structured training before going live.</span></li>
+          <li><span><b style="font-weight:500;color:#2a1a12">Apply.</b> Apply online or share your resume with our HR team.</span></li>
+          <li><span><b style="font-weight:500;color:#2a1a12">Screening call.</b> A short call to understand your background and preferred role.</span></li>
+          <li><span><b style="font-weight:500;color:#2a1a12">Interview &amp; assessment.</b> A conversation and a simple test of communication and role skills.</span></li>
+          <li><span><b style="font-weight:500;color:#2a1a12">Offer &amp; training.</b> Receive your offer and start structured training before going live.</span></li>
         </ul>
       </article>
       <!-- TODO: sample roles; replace with the client's actual openings -->
