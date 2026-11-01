@@ -4,8 +4,8 @@ Company website for **Stallion Connect Pvt Ltd**: call centre, BPO, sales, custo
 
 The whole site is one self-contained file, `index.html`: all CSS and JavaScript are inline and there is no build step. Sections: Home, About, Services, Industries, Careers and Contact, linked from the navigation bar.
 
-- **Smooth scrolling** uses [Lenis](https://github.com/darkroomengineering/lenis), loaded from jsDelivr.
-- **Background videos and scenery** load from CloudFront. **Photos** are free Unsplash images linked from `images.unsplash.com`; swap them for the company's own photos when available.
+- **Scrolling** is the browser's own. Lenis smooth scrolling was removed because it made the page lag.
+- **Background videos** load from CloudFront, each only as it nears the screen, and pause off-screen. Their stills are compressed WebP files in `assets/img/` (`still-*.webp`). **Photos** are free Unsplash images linked from `images.unsplash.com`; swap them for the company's own photos when available.
 - **The logo** is embedded in the page as a data URI. The original logo files remain in `assets/img/`.
 
 ## Run locally
