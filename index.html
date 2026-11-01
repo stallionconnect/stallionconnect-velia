@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Stallion Connect Pvt Ltd | Where every connection counts — Call Centre, BPO &amp; Back-Office</title>
-<meta name="description" content="Stallion Connect Pvt Ltd provides domestic and international call centre operations, banking and financial services outsourcing, inbound and outbound sales, customer support, lead generation, recruitment and back-office services.">
+<meta name="description" content="Stallion Connect Pvt Ltd provides domestic and international call centre operations, conventional and Islamic banking outsourcing, inbound and outbound sales, customer support, lead generation, recruitment and back-office services.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#f6f0e7">
 <meta property="og:type" content="website">
@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap">
 <style>
 :root{
-  --bg:#f6f0e7; --ink:#2a1a12; --ink-2:#5b4a3f; --brown:#3b2116; --pill:#ece3d7;
+  --bg:#f6f0e7; --ink:#01337a; --ink-2:#5b4a3f; --pill:#ece3d7; /* ink is the brand navy: headings, strong text and dark buttons */
   --line:rgba(42,26,18,.08); --glass:rgba(250,245,238,.55); --glass-b:rgba(255,255,255,.55);
   --r-xl:34px; --ease:cubic-bezier(.22,1,.36,1); --ease-io:cubic-bezier(.65,0,.35,1);
 }
@@ -45,12 +45,12 @@ ul,ol{list-style:none}
 .js .split.in .w>span{transform:none;opacity:1}
 
 /* hero headline gradient goes on EACH WORD, never on a wrapper */
-.h-display{font-weight:400;font-size:clamp(48px,7.6vw,112px);line-height:.96;letter-spacing:-.045em;color:#3a2419}
-.h-display .w>span{background:linear-gradient(180deg,#3a2419 0%,#6d5547 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.h-display{font-weight:400;font-size:clamp(48px,7.6vw,112px);line-height:.96;letter-spacing:-.045em;color:var(--ink)}
+.h-display .w>span{background:linear-gradient(180deg,var(--ink) 0%,#004290 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
 
-.h2{font-weight:400;font-size:clamp(34px,4.4vw,62px);line-height:1.02;letter-spacing:-.04em;margin-top:18px;color:#2a1a12}
+.h2{font-weight:400;font-size:clamp(34px,4.4vw,62px);line-height:1.02;letter-spacing:-.04em;margin-top:18px;color:var(--ink)}
 .h2 .lt{color:#8d7b6f;font-weight:300}
-.cta h2{font-weight:400;font-size:clamp(56px,8.4vw,128px);line-height:.9;letter-spacing:-.055em;color:#2a1a12}
+.cta h2{font-weight:400;font-size:clamp(56px,8.4vw,128px);line-height:.9;letter-spacing:-.055em;color:var(--ink)}
 
 /* Lenis required CSS */
 html.lenis,html.lenis body{height:auto}
@@ -76,11 +76,11 @@ html.lenis,html.lenis body{height:auto}
 .nav .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;border:1px solid transparent;border-radius:999px;transition:max-width .6s var(--ease),padding .6s var(--ease),background .6s var(--ease),box-shadow .6s var(--ease),border-color .6s var(--ease)}
 /* once scrolled, the bar floats as a frosted pill */
 .nav.scrolled{padding:10px 12px}
-.nav.scrolled .wrap{max-width:1180px;padding:7px 7px 7px 12px;background:rgba(246,240,231,.78);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%);border-color:rgba(255,255,255,.7);box-shadow:0 18px 40px -24px rgba(59,33,22,.4)}
+.nav.scrolled .wrap{max-width:1180px;padding:7px 7px 7px 12px;background:rgba(246,240,231,.78);-webkit-backdrop-filter:blur(18px) saturate(140%);backdrop-filter:blur(18px) saturate(140%);border-color:rgba(255,255,255,.7);box-shadow:0 18px 40px -24px rgba(1,51,122,.4)}
 .nav.scrolled .pill{padding:8px 18px}
 .nav.scrolled .logo .sc-logo{width:122px;height:38px}
-.pill.active{background:var(--brown);color:#f6ede2}
-.pill.active:hover{background:var(--brown)}
+.pill.active{background:var(--ink);color:#f6ede2}
+.pill.active:hover{background:var(--ink)}
 .mmenu a.active{color:#d4612f}
 .nav-l{display:flex;gap:10px}
 .pill{background:var(--pill);border-radius:999px;padding:10px 24px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;transition:background .3s var(--ease),transform .3s var(--ease)}
@@ -93,9 +93,9 @@ html.lenis,html.lenis body{height:auto}
 .nav-r{display:flex;justify-content:flex-end;align-items:center;gap:22px}
 .tel{font-size:13px;display:flex;align-items:center;gap:8px}
 .tel svg{width:14px;height:14px}
-.btn-dark{background:var(--brown);color:#f6ede2;border-radius:999px;padding:11px 26px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;border:0;cursor:pointer;position:relative;overflow:hidden;isolation:isolate;display:inline-block;white-space:nowrap;transition:transform .4s var(--ease),box-shadow .4s var(--ease),opacity .3s}
+.btn-dark{background:var(--ink);color:#f6ede2;border-radius:999px;padding:11px 26px;font-size:13px;text-transform:uppercase;letter-spacing:.05em;border:0;cursor:pointer;position:relative;overflow:hidden;isolation:isolate;display:inline-block;white-space:nowrap;transition:transform .4s var(--ease),box-shadow .4s var(--ease),opacity .3s}
 .btn-dark::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.22) 50%,transparent 70%);transform:translateX(-120%);z-index:-1;transition:transform .9s var(--ease)}
-.btn-dark:hover{transform:translateY(-2px);box-shadow:0 12px 28px -12px rgba(59,33,22,.6)}
+.btn-dark:hover{transform:translateY(-2px);box-shadow:0 12px 28px -12px rgba(1,51,122,.6)}
 .btn-dark:hover::before{transform:translateX(120%)}
 .btn-dark:disabled{opacity:.6;cursor:default;transform:none}
 .burger{width:42px;height:42px;border-radius:50%;background:var(--pill);border:0;display:none;flex-direction:column;align-items:center;justify-content:center;gap:5px;cursor:pointer}
@@ -119,7 +119,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .hero-points{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:20px}
 .hero-points li{font-size:12px;text-transform:uppercase;letter-spacing:.06em;background:var(--pill);border-radius:999px;padding:7px 14px;display:flex;align-items:center;gap:6px}
 .hero-points li::before{content:"";width:6px;height:6px;border-radius:50%;background:#d4612f}
-.hero-card{position:relative;margin-top:34px;border-radius:34px;overflow:hidden;height:clamp(680px,45.5vw,860px);background:#e8dccb;box-shadow:0 40px 80px -50px rgba(59,33,22,.45)}
+.hero-card{position:relative;margin-top:34px;border-radius:34px;overflow:hidden;height:clamp(680px,45.5vw,860px);background:#e8dccb;box-shadow:0 40px 80px -50px rgba(1,51,122,.45)}
 .shade{position:absolute;inset:0;background:radial-gradient(60% 70% at 50% 55%,rgba(246,240,231,.18),transparent 70%)}
 .studio{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(920px,74%);display:grid;grid-template-columns:1.7fr 1fr;border-radius:26px;background:rgba(240,232,222,.42);-webkit-backdrop-filter:blur(26px) saturate(130%);backdrop-filter:blur(26px) saturate(130%);border:1px solid rgba(255,255,255,.55);box-shadow:0 30px 60px -30px rgba(40,20,10,.35),inset 0 1px 0 rgba(255,255,255,.6);overflow:hidden}
 .chat{padding:22px 24px;display:flex;flex-direction:column;gap:12px;min-width:0}
@@ -188,7 +188,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .avatars .faces{display:flex}
 .avatars .faces img{width:30px;height:30px;border-radius:50%;border:2px solid #fff;object-fit:cover}
 .avatars .faces img+img{margin-left:-8px}
-.btn-white{display:block;text-align:center;background:#fff;color:#2a1a12;border-radius:999px;padding:12px;font-size:13px;margin-top:14px;transition:transform .4s var(--ease)}
+.btn-white{display:block;text-align:center;background:#fff;color:var(--ink);border-radius:999px;padding:12px;font-size:13px;margin-top:14px;transition:transform .4s var(--ease)}
 .btn-white:hover{transform:translateY(-2px)}
 .collage{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:6px;min-height:140px;border-radius:16px;overflow:hidden}
 .collage img{width:100%;height:100%;object-fit:cover;border-radius:12px;transition:transform 1.2s var(--ease)}
@@ -203,7 +203,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .row .ico svg{width:16px;height:16px}
 .row b{display:block;font-size:12px;font-weight:500}
 .row em{font-style:normal;font-size:10.5px;color:#8a7a6e;display:block;line-height:1.35}
-.ok{width:18px;height:18px;border-radius:50%;background:#2a1a12;margin-left:auto;display:grid;place-items:center;flex:none}
+.ok{width:18px;height:18px;border-radius:50%;background:var(--ink);margin-left:auto;display:grid;place-items:center;flex:none}
 .ok svg{width:9px;height:9px}
 .insight{position:relative;flex:1;border-radius:16px;overflow:hidden;min-height:150px}
 .insight img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;transition:transform 1.2s var(--ease)}
@@ -244,7 +244,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .g-foot svg{width:12px;height:12px}
 .build h5{margin-top:4px}
 .build ul{margin-top:12px;display:flex;flex-direction:column;gap:9px}
-.build li{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:#2a1a12}
+.build li{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--ink)}
 .build li span:first-child{display:flex;align-items:center;gap:8px;color:#5b4a3f}
 .build li svg{width:13px;height:13px}
 .bar{margin-top:14px;display:flex;align-items:center;gap:10px;font-size:11px;color:#8a7a6e}
@@ -279,7 +279,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .svc .meta+.meta{border-top:0;padding-top:0;margin-top:10px}
 .svc .view{margin-top:auto}
 .svc .meta:last-of-type{margin-bottom:16px}
-.svc.cta-card{background:var(--brown);color:#f6ede2;border-color:transparent;justify-content:space-between}
+.svc.cta-card{background:var(--ink);color:#f6ede2;border-color:transparent;justify-content:space-between}
 .svc.cta-card h5{font-size:28px;margin-top:0}
 .svc.cta-card>p{color:rgba(246,237,226,.75)}
 .svc.cta-card .view{border-color:rgba(246,237,226,.2)}
@@ -295,7 +295,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;padding-top:16px}
 .tags li{font-size:10.5px;background:rgba(255,255,255,.7);border-radius:999px;padding:4px 10px;color:#5b4a3f}
 .approach{margin-top:14px;display:grid;grid-template-columns:1.25fr 1fr 1fr 1fr;gap:14px}
-.approach .lead-card{padding:24px;background:rgba(59,33,22,.88);color:#f6ede2;border-color:transparent}
+.approach .lead-card{padding:24px;background:rgba(1,51,122,.88);color:#f6ede2;border-color:transparent}
 .approach .lead-card h4{font-size:22px;letter-spacing:-.02em;line-height:1.15}
 .approach .lead-card p{color:rgba(246,237,226,.75)}
 
@@ -328,7 +328,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .field label .opt{text-transform:none;letter-spacing:0;color:#8a7a6e}
 .field input,.field select,.field textarea{width:100%;border:1px solid rgba(42,26,18,.1);background:rgba(255,255,255,.75);border-radius:14px;padding:11px 14px;font-size:13.5px;color:var(--ink);outline:none;transition:border-color .3s,box-shadow .3s;resize:vertical}
 .field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6' fill='none' stroke='%235b4a3f' stroke-width='1.4'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;background-size:10px;padding-right:34px}
-.field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(59,33,22,.35);box-shadow:0 0 0 4px rgba(59,33,22,.08)}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(1,51,122,.35);box-shadow:0 0 0 4px rgba(1,51,122,.08)}
 .field input:user-invalid,.field select:user-invalid,.field textarea:user-invalid{border-color:#d4612f}
 .f-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:18px}
 .f-note{font-size:11.5px;color:#8a7a6e}
@@ -364,7 +364,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
 .foot ul{display:flex;flex-direction:column;gap:10px}
 .foot ul a,.foot ul span{font-size:13px;color:#6a594d;position:relative;transition:color .5s var(--ease)}
 .foot ul a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
-.foot ul a:hover{color:#2a1a12}
+.foot ul a:hover{color:var(--ink)}
 .foot ul a:hover::after{transform:scaleX(1);transform-origin:left}
 .mark .sc-mark{width:56px;height:56px}
 .legal{display:flex;justify-content:space-between;gap:16px;margin-top:64px;padding-top:22px;border-top:1px solid var(--line);font-size:12px;color:#8a7a6e}
@@ -499,7 +499,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
       <div class="studio" id="studio">
         <div class="chat">
           <div class="chat-top msg">Inbound call · Customer care · Hindi <span class="live-dot"><i></i>Live</span></div>
-          <div class="bubble msg">Hi, I applied for a credit card last week. Can you tell me the status?</div>
+          <div class="bubble msg">Hi, I applied for a covered card last week. Can you tell me the status?</div>
           <div class="ai msg">
             <div class="ai-ic"><span class="sc-mark"></span></div>
             <div class="ai-t" data-text="Of course! I've verified your details and your KYC is complete. Your card has been approved and will be dispatched within three working days."></div>
@@ -617,10 +617,10 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
           </ul>
           <span class="lbl" style="display:block;margin-top:22px">What sets us apart</span>
           <ul class="checks two" style="margin-top:14px">
-            <li><span><b style="font-weight:500;color:#2a1a12">Industry-trained teams.</b> Agents learn your products, compliance rules and customer expectations before they go live.</span></li>
-            <li><span><b style="font-weight:500;color:#2a1a12">Quality you can measure.</b> Call audits, KPIs and regular reports show exactly how your process is performing.</span></li>
-            <li><span><b style="font-weight:500;color:#2a1a12">Built to scale.</b> Start with a pilot and grow the team as your volumes increase, without the hiring headache.</span></li>
-            <li><span><b style="font-weight:500;color:#2a1a12">Data security first.</b> Access controls and confidentiality agreements protect your customers' information.</span></li>
+            <li><span><b style="font-weight:500;color:var(--ink)">Industry-trained teams.</b> Agents learn your products, compliance rules and customer expectations before they go live.</span></li>
+            <li><span><b style="font-weight:500;color:var(--ink)">Quality you can measure.</b> Call audits, KPIs and regular reports show exactly how your process is performing.</span></li>
+            <li><span><b style="font-weight:500;color:var(--ink)">Built to scale.</b> Start with a pilot and grow the team as your volumes increase, without the hiring headache.</span></li>
+            <li><span><b style="font-weight:500;color:var(--ink)">Data security first.</b> Access controls and confidentiality agreements protect your customers' information.</span></li>
           </ul>
         </article>
       </div>
@@ -655,7 +655,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
               <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=300&q=70" alt="" loading="lazy">
               <img src="https://images.unsplash.com/photo-1758876018582-e7573baf5306?auto=format&fit=crop&w=300&q=70" alt="" loading="lazy">
             </div>
-            <div class="g-foot"><span>Front office to back office</span><span><svg viewBox="0 0 12 12" fill="none" stroke="#3b2116" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6h7M6.5 3l3 3-3 3"/></svg></span></div>
+            <div class="g-foot"><span>Front office to back office</span><span><svg viewBox="0 0 12 12" fill="none" stroke="#01337a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6h7M6.5 3l3 3-3 3"/></svg></span></div>
           </div>
           <div class="g-card build rv" style="--d:2">
             <div class="lbl">How we work</div>
@@ -679,9 +679,9 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
             <div class="hero-vis">
               <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=300&q=70" alt="" loading="lazy">
               <div>
-                <h5>Banking &amp; Finance</h5>
+                <h5>Conventional &amp; Islamic Banking</h5>
                 <em>Sales · KYC · Collections</em>
-                <ul class="checks"><li>Process-trained BFSI agents</li><li>Compliance-first scripts</li><li>Conversion tracking</li></ul>
+                <ul class="checks"><li>Agents trained on conventional and Islamic products</li><li>Compliance-first scripts</li><li>Conversion tracking</li></ul>
               </div>
             </div>
             <a class="view" href="#banking">See the service <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 7h9M8 3.5L11.5 7 8 10.5"/></svg></a>
@@ -711,18 +711,18 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
         <div class="svc-top"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/><path d="M21 16v2a4 4 0 0 1-4 4h-5"/></svg></span><span class="lbl">01 / 07</span></div>
         <h5>Domestic &amp; International Call Centre Operations</h5>
         <p>Professionally managed voice operations for customers across India and overseas markets, with trained agents, quality monitoring and flexible shift coverage.</p>
-        <ul class="checks"><li>Inbound customer care &amp; helpdesk</li><li>Outbound calling campaigns</li><li>Multilingual support in English, Hindi &amp; regional languages</li><li>International voice processes for US, UK &amp; Australian time zones</li><li>Call quality monitoring &amp; audits</li><li>Escalation &amp; complaint management</li></ul>
+        <ul class="checks"><li>Inbound customer care &amp; helpdesk</li><li>Outbound calling campaigns</li><li>Multilingual support in English, Hindi &amp; regional languages</li><li>International voice processes for UAE, US, UK &amp; Australian time zones</li><li>Call quality monitoring &amp; audits</li><li>Escalation &amp; complaint management</li></ul>
         <div class="meta"><b>Ideal for</b>Banks, telecom, e-commerce, travel and any business with high call volumes.</div>
         <div class="meta"><b>What you get</b>Dedicated or shared agent teams · Flexible shifts across time zones · Daily and monthly MIS reports</div>
         <a class="view" href="#contact" data-service="call-centre">Enquire about this service <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 7h9M8 3.5L11.5 7 8 10.5"/></svg></a>
       </article>
       <article class="g-card svc rv" id="banking" style="--d:1">
         <div class="svc-top"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2 20 7H4z"/></svg></span><span class="lbl">02 / 07</span></div>
-        <h5>Banking &amp; Financial Services Outsourcing</h5>
-        <p>Specialised teams for banks, NBFCs, fintechs and insurers, handling sales, service and verification with the care financial customers expect.</p>
-        <ul class="checks"><li>Credit card &amp; personal loan sales</li><li>Customer onboarding &amp; KYC verification</li><li>Account and card servicing support</li><li>Collections &amp; payment reminder calls</li><li>Insurance tele-sales &amp; renewals</li><li>Document collection &amp; verification</li></ul>
-        <div class="meta"><b>Ideal for</b>Banks, NBFCs, fintechs, insurers and payment companies.</div>
-        <div class="meta"><b>What you get</b>Process-trained BFSI agents · Compliance-first scripts and checks · Conversion and quality tracking</div>
+        <h5>Conventional &amp; Islamic Banking Outsourcing</h5>
+        <p>Specialised teams for conventional and Islamic banks, NBFCs, fintechs and insurers, handling sales, service and verification with the care financial customers expect.</p>
+        <ul class="checks"><li>Covered card &amp; personal finance sales</li><li>Customer onboarding &amp; KYC verification</li><li>Account and card servicing support</li><li>Collections &amp; payment reminder calls</li><li>Insurance &amp; takaful tele-sales and renewals</li><li>Document collection &amp; verification</li></ul>
+        <div class="meta"><b>Ideal for</b>Conventional and Islamic banks, NBFCs, fintechs, insurers and payment companies.</div>
+        <div class="meta"><b>What you get</b>Agents trained on conventional and Islamic products · Compliance-first scripts and checks · Conversion and quality tracking</div>
         <a class="view" href="#contact" data-service="banking">Enquire about this service <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 7h9M8 3.5L11.5 7 8 10.5"/></svg></a>
       </article>
       <article class="g-card svc rv" id="sales" style="--d:2">
@@ -806,7 +806,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
       </div>
 
       <div class="ind-grid">
-        <article class="card ind rv" id="bfsi" style="--d:1"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2 20 7H4z"/></svg></span><h4>Banking &amp; Financial Services</h4><p>Card and loan sales, onboarding, KYC and collections for banks, NBFCs and fintechs.</p><ul class="tags"><li>Tele-sales</li><li>KYC</li><li>Collections</li></ul></article>
+        <article class="card ind rv" id="bfsi" style="--d:1"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2 20 7H4z"/></svg></span><h4>Conventional &amp; Islamic Banking</h4><p>Covered card and personal finance sales, onboarding, KYC and collections for conventional and Islamic banks, NBFCs and fintechs.</p><ul class="tags"><li>Tele-sales</li><li>KYC</li><li>Collections</li></ul></article>
         <article class="card ind rv" id="insurance" style="--d:2"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg></span><h4>Insurance</h4><p>Policy sales, renewals, claims assistance and policyholder service.</p><ul class="tags"><li>Renewals</li><li>Claims support</li><li>Tele-sales</li></ul></article>
         <article class="card ind rv" id="telecom" style="--d:3"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></svg></span><h4>Telecom &amp; Internet</h4><p>Activations, plan upgrades, billing queries and technical support.</p><ul class="tags"><li>Helpdesk</li><li>Upgrades</li><li>Retention</li></ul></article>
         <article class="card ind rv" id="ecommerce" style="--d:4"><span class="svc-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></span><h4>E-commerce &amp; Retail</h4><p>Order support, returns, seller onboarding and catalogue management.</p><ul class="tags"><li>Order support</li><li>Chat</li><li>Back-office</li></ul></article>
@@ -852,10 +852,10 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
         <p>Apply online and our HR team will contact shortlisted candidates.</p>
         <span class="lbl" style="display:block;margin-top:24px">Hiring process</span>
         <ul class="checks" style="margin-top:12px">
-          <li><span><b style="font-weight:500;color:#2a1a12">Apply.</b> Apply online or share your resume with our HR team.</span></li>
-          <li><span><b style="font-weight:500;color:#2a1a12">Screening call.</b> A short call to understand your background and preferred role.</span></li>
-          <li><span><b style="font-weight:500;color:#2a1a12">Interview &amp; assessment.</b> A conversation and a simple test of communication and role skills.</span></li>
-          <li><span><b style="font-weight:500;color:#2a1a12">Offer &amp; training.</b> Receive your offer and start structured training before going live.</span></li>
+          <li><span><b style="font-weight:500;color:var(--ink)">Apply.</b> Apply online or share your resume with our HR team.</span></li>
+          <li><span><b style="font-weight:500;color:var(--ink)">Screening call.</b> A short call to understand your background and preferred role.</span></li>
+          <li><span><b style="font-weight:500;color:var(--ink)">Interview &amp; assessment.</b> A conversation and a simple test of communication and role skills.</span></li>
+          <li><span><b style="font-weight:500;color:var(--ink)">Offer &amp; training.</b> Receive your offer and start structured training before going live.</span></li>
         </ul>
       </article>
       <!-- TODO: sample roles; replace with the client's actual openings -->
@@ -946,7 +946,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
               <select id="service" name="service">
                 <option value="">Select a service</option>
                 <option value="call-centre">Call Centre Operations</option>
-                <option value="banking">Banking &amp; Financial Services</option>
+                <option value="banking">Conventional &amp; Islamic Banking</option>
                 <option value="sales">Inbound &amp; Outbound Sales</option>
                 <option value="bpo-ites">BPO &amp; ITES Operations</option>
                 <option value="support-leads">Customer Support &amp; Lead Generation</option>
@@ -983,7 +983,7 @@ body.menu-open .mmenu a:nth-child(6){transition-delay:.3s}
         </div>
         <div class="rv" style="--d:2">
           <h6>Services</h6>
-          <ul><li><a href="#call-centre">Call Centre Operations</a></li><li><a href="#banking">Banking &amp; Financial Services</a></li><li><a href="#sales">Inbound &amp; Outbound Sales</a></li><li><a href="#bpo-ites">BPO &amp; ITES</a></li><li><a href="#support-leads">Support &amp; Lead Generation</a></li><li><a href="#recruitment">Recruitment &amp; Training</a></li><li><a href="#back-office">Back-Office &amp; Admin</a></li></ul>
+          <ul><li><a href="#call-centre">Call Centre Operations</a></li><li><a href="#banking">Conventional &amp; Islamic Banking</a></li><li><a href="#sales">Inbound &amp; Outbound Sales</a></li><li><a href="#bpo-ites">BPO &amp; ITES</a></li><li><a href="#support-leads">Support &amp; Lead Generation</a></li><li><a href="#recruitment">Recruitment &amp; Training</a></li><li><a href="#back-office">Back-Office &amp; Admin</a></li></ul>
         </div>
         <div class="rv" style="--d:3">
           <h6>Get in touch</h6>
